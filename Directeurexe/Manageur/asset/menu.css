@@ -1,0 +1,43 @@
+.cont {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 1000px;
+  border-radius: 3px;
+  border: #9f9d9d solid 6px;
+}
+.cont .p svg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 5%;
+  left: 20%;
+}
+.cont .p svg path {
+  fill: #a5c9ca;
+  transition: 0.2s ease-in;
+}
+.cont .p1 svg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 5%;
+  left: 70%;
+}
+.cont .p1 svg path {
+  fill: #a5c9ca;
+  transition: 0.2s ease-in;
+}
+.cont .p3 svg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 30%;
+  left: 46%;
+}
+.cont .p3 svg path {
+  fill: #a5c9ca;
+  transition: 0.2s ease-in;
+}/*# sourceMappingURL=menu.css.map */

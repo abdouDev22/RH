@@ -1,0 +1,270 @@
+@font-face {
+    font-family: kanit;
+    src: url(kanit-bold.woff2) format("woff2"), url(kanit-bold.woff) format("woff")
+  }
+  
+  * {
+    box-sizing: border-box
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    max-height: 100vh;
+    padding: 0;
+    margin: 0
+  }
+  
+  body {
+    background: black;
+    color: #fff;
+    font-family: kanit, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%
+  }
+  
+  nav {
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Helvetica;
+    padding: 0 1rem;
+    position: relative;
+    flex-shrink: 0
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    transform: translate(190%)
+  }
+  
+  nav ul:first-child {
+    gap: 6rem
+  }
+  
+  nav ul:last-child {
+    gap: 6rem
+  }
+  
+  nav .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-800%)
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    position: relative
+  }
+  
+  a:after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width .2s ease-in-out
+  }
+  
+  a:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: #000;
+    box-shadow: 0 0 50px #000;
+    border-radius: 20px;
+    left: 42%;
+    top: 0%;
+    padding: 40px
+  }
+  
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+  }
+  
+  h2 {
+    font-size: 50px;
+    color: #fff;
+    text-align: center
+  }
+  
+  .input-group {
+    position: relative;
+    margin: 35px 0;
+    border-bottom: 2px solid #fff
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s
+  }
+  
+  .input-group input {
+    width: 500px;
+    height: 60px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    margin: .9px;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .input-group input:focus~label,
+  .input-group input:valid~label {
+    top: -5px
+  }
+  
+  button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background: #393737;
+    box-shadow: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    transition: background-color .5s ease-in-out;
+  }
+  
+  .signUp-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0
+  }
+  
+  .signUp-link p {
+    color: #fff
+  }
+  
+  .signUp-link p a {
+    color: #abb1bc;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 3px
+  }
+  
+  .circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 30%;
+    background: linear-gradient(#03a9f4, #23ff2C);
+    border-radius: 50%;
+    animation: animate 20s ease-in-out infinite
+  }
+  
+  @keyframes animate {
+  
+    0%,
+    to {
+      transform: translate(-100px);
+      opacity: .5
+    }
+  
+    8% {
+      transform: translate(10px);
+      opacity: 1
+    }
+  
+    18% {
+      transform: translate(100px);
+      opacity: 0
+    }
+  
+    25% {
+      transform: translate(800px);
+      opacity: .1
+    }
+  
+    50% {
+      transform: translate(900px);
+      opacity: 1
+    }
+  
+    55% {
+      transform: translate(800px);
+      opacity: 0
+    }
+  
+    60% {
+      transform: translate(100px);
+      opacity: .1
+    }
+  
+    70% {
+      transform: translate(-10px);
+      opacity: 1
+    }
+  }
+  
+  .glass {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .glass .layer {
+    position: relative;
+    width: 30px;
+    height: 65vh;
+    margin: 1px;
+    box-shadow: 0 5px 25px #00000026;
+    backdrop-filter: blur(30px)
+  }
+  
+  .glass .layer::nth-child(4n+1) {
+    backdrop-filter: blur(10px)
+  }
+  
+  .glass .layer::nth-child(4n+2) {
+    backdrop-filter: blur(50px)
+  }
+  
+  .glass .layer::nth-child(4n+3) {
+    backdrop-filter: blur(30px)
+  }
+  
+  .glass .layer::nth-child(4n+4) {
+    backdrop-filter: blur(20px)
+  }
+  
+  button:hover {
+    color: #000;
+    background-color: #c9c4c4;
+    font-weight: bold;
+  }

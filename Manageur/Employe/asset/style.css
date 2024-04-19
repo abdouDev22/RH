@@ -1,0 +1,326 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@font-face {
+  font-family: "kanit";
+  src: url("../fonts/kanit-bold.woff2") format("woff2"), url("../fonts/kanit-bold.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  background-color: #000;
+  color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #838080;
+  border-radius: 10px;
+  height: 2px;
+  width: 0.1px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #131313;
+}
+
+body {
+  font-family: "kanit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+}
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Helvetica;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 10;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  transform: translateX(-70%);
+}
+nav ul li a {
+  margin: 10px;
+  padding: 1vw;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #1b1b1b;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  border: #ab050b solid 3px;
+  background-color: #ab050b;
+  transition: 0.6s ease-in-out;
+}
+nav ul li a:hover {
+  color: #fff;
+  box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+  background-color: rgba(11, 11, 11, 0.0980392157);
+}
+nav ul li .a {
+  position: absolute;
+  top: -70%;
+}
+nav ul li .a svg {
+  cursor: pointer;
+}
+nav ul li .a svg path {
+  stroke: #0d383f;
+}
+nav ul li .a svg:hover path {
+  stroke: #196e7b;
+}
+nav ul li .B1 {
+  right: 600%;
+}
+nav ul li .B2 {
+  right: 400%;
+}
+nav .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar {
+  position: fixed;
+  top: 80px;
+  width: 60px;
+  height: 100vh;
+  background: #262A56;
+  overflow: scroll;
+  transition: 600ms;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  z-index: 10;
+}
+.sidebar .space {
+  text-align: center;
+  display: block;
+  position: relative;
+  top: 50px;
+  color: #a5c9ca;
+  border-bottom: 3px solid #a5c9ca;
+  margin-bottom: 100px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  font-size: 3vw;
+  text-transform: uppercase;
+  transition: 1000ms ease-in-out text-transform;
+}
+.sidebar .space span {
+  display: none;
+  transition: 1000ms all ease-in-out;
+}
+.sidebar .lock1 {
+  display: block;
+  position: absolute;
+  left: 24vw;
+  width: 60px;
+  height: 50px;
+}
+.sidebar .lock1 svg {
+  width: 50px;
+  height: 50px;
+  transition: 500ms;
+}
+.sidebar .lock1 svg path {
+  stroke: #000;
+}
+.sidebar .lock2 {
+  display: block;
+  position: absolute;
+  left: 24vw;
+  width: 60px;
+  height: 50px;
+}
+.sidebar .lock2 svg {
+  width: 50px;
+  height: 50px;
+  transition: 500ms;
+}
+.sidebar .lock2 svg path {
+  stroke: #000;
+}
+.sidebar ul li {
+  list-style: none;
+  padding-left: 2.5vw;
+}
+.sidebar ul li .logo2:hover {
+  background-color: #000;
+}
+.sidebar ul li a {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.sidebar ul li .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 60px;
+  font-size: 1.5em;
+  color: #000;
+}
+.sidebar ul li .icon .profile {
+  position: relative;
+}
+.sidebar ul li .icon .profile svg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  transform: translateY(-30px) translateX(-70px);
+}
+.sidebar ul li .icon .profile svg path {
+  fill: #000;
+  transition: 0.2s ease-in;
+}
+.sidebar ul li .icon svg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  transform: translateX(-40px);
+}
+.sidebar ul li .icon svg path {
+  stroke: #000;
+  transition: 0.2s ease-in;
+}
+.sidebar ul li .text {
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #a5c9ca;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.sidebar::-webkit-scrollbar {
+  opacity: 0;
+  width: 0.0001px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.sidebar:hover {
+  width: 400px;
+}
+.sidebar:hover .space span {
+  display: inline;
+}
+.sidebar:hover ul li:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #000;
+  transform: translateX(10px);
+}
+.sidebar:hover ul li:hover a {
+  transform: translateX(20px);
+}
+.sidebar:hover ul li:hover .profile {
+  position: relative;
+}
+.sidebar:hover ul li:hover .profile svg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  transform: translateY(-30px) translateX(-70px);
+}
+.sidebar:hover ul li:hover .profile svg path {
+  fill: #a5c9ca;
+  transition: 0.2s ease-in;
+}
+.sidebar:hover ul li:hover svg {
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+}
+.sidebar:hover ul li:hover svg path {
+  stroke: #a5c9ca;
+}
+.sidebar:hover ul li:hover .text {
+  color: #A5C9CA;
+}
+
+.list.active {
+  background-color: #000;
+}
+.list.active a {
+  transform: translateX(5px);
+}
+.list.active a .text {
+  color: #4F8A8B;
+}
+.list.active a .icon .profile {
+  position: relative;
+}
+.list.active a .icon .profile svg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  transform: translateY(-30px) translateX(-70px);
+}
+.list.active a .icon .profile svg path {
+  fill: #fff;
+  transition: 0.2s ease-in;
+}
+.list.active a .icon svg {
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.list.active a .icon svg path {
+  stroke: #fff;
+}
+
+.sidebar:hover:not(.blocked),
+.sidebar.blocked {
+  width: 400px;
+  /* Largeur lorsque la sidebar est en hover ou bloquée */
+}
+.sidebar:hover:not(.blocked) .space span,
+.sidebar.blocked .space span {
+  display: inline;
+}
+
+.z {
+  z-index: 10;
+}/*# sourceMappingURL=style.css.map */

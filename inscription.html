@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ins.css">
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <strong><a href="index.html">R.H</strong>
+        <span>Company</a></span>
+      </div>
+  
+        <ul>
+          <li><a href="connexion.html">connexion</a></li>
+          <li><a href="inscription.html">inscription</a></li>
+          <li><a href="offre.php">Offres</a> </li>
+          <li><a href="contact/contact.html">Contacts</a></li>
+        </ul>
+  
+      </nav>
+
+      <h1>Inscription</h1>
+      <form action="php/INSCRIP.php" method="post">
+      <div class="cont">
+        <div class="cont1">
+            <label for="" class="label1">Prenom</label>
+            <input type="text" name="Prenom" class="input1" >
+            <label for=""  class="label2">Nom</label>
+            <input type="text" name="nom" class="input2">
+        </div>
+        <div class="cont2">
+          <label for="" class="label1">Date de Naissance</label>
+            <input type="date" name="date" class="input1">
+            <label for="" class="label2">Address</label>
+            <input type="text" name="Address" class="input2">
+        </div>
+        <div class="cont3">
+          <label for="" class="label1">Email</label>
+            <input type="email" name="mail" class="input1">
+            <label for="" class="label2">Poste</label>
+            <input type="text" name="poste" class="input2">
+        </div>
+        <div class="cont4">
+          <label for="" class="label1">Tel</label>
+            <input type="number" name="Tel" class="input1">
+            <label for=""  class="label2">User name</label>
+            <input type="text" name="user" class="input2" >
+        </div>
+        <div class="cont5">
+          <label for="" class="label1">Mot de passe</label>
+            <input type="password" name="passe" class="input1">
+            <label for="" class="label2">Confirmer</label>
+            <input type="password" name="conf" class="input2">
+            <input type="submit" value="Valider" class="valider">
+        </div>
+        <div class="nav">
+            <span class="suivant"><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="1" d="M3.75977 7.22005V16.7901C3.75977 18.7501 5.88975 19.98 7.58975 19L11.7397 16.61L15.8898 14.21C17.5898 13.23 17.5898 10.78 15.8898 9.80004L11.7397 7.40004L7.58975 5.01006C5.88975 4.03006 3.75977 5.25005 3.75977 7.22005Z" fill="#292D32"/>
+                <path d="M20.2402 18.9298C19.8302 18.9298 19.4902 18.5898 19.4902 18.1798V5.81982C19.4902 5.40982 19.8302 5.06982 20.2402 5.06982C20.6502 5.06982 20.9902 5.40982 20.9902 5.81982V18.1798C20.9902 18.5898 20.6602 18.9298 20.2402 18.9298Z" fill="#292D32"/>
+                </svg></span>
+                <span class="presendant"><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <path opacity="1" d="M3.75977 7.22005V16.7901C3.75977 18.7501 5.88975 19.98 7.58975 19L11.7397 16.61L15.8898 14.21C17.5898 13.23 17.5898 10.78 15.8898 9.80004L11.7397 7.40004L7.58975 5.01006C5.88975 4.03006 3.75977 5.25005 3.75977 7.22005Z" fill="#292D32"/> <path d="M20.2402 18.9298C19.8302 18.9298 19.4902 18.5898 19.4902 18.1798V5.81982C19.4902 5.40982 19.8302 5.06982 20.2402 5.06982C20.6502 5.06982 20.9902 5.40982 20.9902 5.81982V18.1798C20.9902 18.5898 20.6602 18.9298 20.2402 18.9298Z" fill="#292D32"/> </g></svg></span>
+        </div>
+      
+      </div>
+    </form>
+    <script>
+      const d1 =document.querySelector('.cont1')
+      const d =document.querySelector('.cont2')
+      const d2 = document.querySelector('.cont3')
+      const d3= document.querySelector('.cont4')
+      const d4= document.querySelector('.cont5')
+      const lien_p= document.querySelector('.presendant')
+      const lien_s= document.querySelector('.suivant')
+      
+      document.addEventListener("DOMcontentLOaded",()=>{
+        localStorage.setItem("local",0)
+      })
+      if(performance.navigation.type === 1){
+        localStorage.setItem("local",0)
+      }
+      
+      let s =document.querySelector('.suivant').addEventListener('click',()=>{
+        let local= localStorage.getItem("local");
+        if(local==0 ){
+          localStorage.setItem("local",1)
+        d.style.opacity = 1;
+        d.style.transform = 'translateX(0%)';
+        d.style.transition = '1s ease-in-out';
+
+        
+        d1.style.opacity = 0;
+        d1.style.transform = 'translateX(-70%)';
+        d1.style.transition = '1s ease-in-out';
+        lien_p.style.opacity = 1;
+        }else if (local==1){
+          localStorage.setItem("local",2)
+        d2.style.opacity = 1;
+        d2.style.transform = 'translateX(0%)';
+        d2.style.transition = '1s ease-in-out';
+
+        
+        d.style.opacity = 0;
+        d.style.transform = 'translateX(-70%)';
+        d.style.transition = '1s ease-in-out';
+        lien_p.style.opacity = 1;
+        }else if(local==2){
+          localStorage.setItem("local",3)
+          d3.style.opacity = 1;
+        d3.style.transform = 'translateX(0%)';
+        d3.style.transition = '1s ease-in-out';
+
+        
+        d2.style.opacity = 0;
+        d2.style.transform = 'translateX(-70%)';
+        d2.style.transition = '1s ease-in-out';
+        lien_p.style.opacity = 1; 
+        }else if(local==3){
+          localStorage.setItem("local",4)
+          d4.style.opacity = 1;
+        d4.style.transform = 'translateX(0%)';
+        d4.style.transition = '1s ease-in-out';
+
+        
+        d3.style.opacity = 0;
+        d3.style.transform = 'translateX(-70%)';
+        d3.style.transition = '1s ease-in-out';
+        lien_s.style.opacity = 0; 
+        }
+        
+      })
+
+
+
+
+
+      let p =document.querySelector('.presendant').addEventListener('click',()=>{
+        if(localStorage.getItem("local")==1){
+          localStorage.setItem("local",0)
+        const d =document.querySelector('.cont2')
+        d.style.opacity = 0;
+        d.style.transform = 'translateX(70%)';
+        d.style.transition = '1s ease-in-out';
+
+        const d1 =document.querySelector('.cont1')
+        d1.style.opacity = 1;
+        d1.style.transform = 'translateX(0%)';
+        d1.style.transition = '1s ease-in-out';
+        lien_p.style.opacity = 0;
+        }else if(localStorage.getItem("local")==2){
+          localStorage.setItem("local",1)
+
+        d.style.opacity = 1;
+        d.style.transform = 'translateX(0%)';
+        d.style.transition = '1s ease-in-out';
+
+        d2.style.opacity = 0;
+        d2.style.transform = 'translateX(70%)';
+        d2.style.transition = '1s ease-in-out';
+        lien_p.style.opacity = 1;
+        
+        }else if(localStorage.getItem("local")==3){
+          localStorage.setItem("local",2)
+
+        d2.style.opacity = 1;
+        d2.style.transform = 'translateX(0%)';
+        d2.style.transition = '1s ease-in-out';
+
+        d3.style.opacity = 0;
+        d3.style.transform = 'translateX(70%)';
+        d3.style.transition = '1s ease-in-out';
+        lien_p.style.opacity = 1;
+        
+        }else if(localStorage.getItem("local")==4){
+          localStorage.setItem("local",3)
+
+        d3.style.opacity = 1;
+        d3.style.transform = 'translateX(0%)';
+        d3.style.transition = '1s ease-in-out';
+
+        d4.style.opacity = 0;
+        d4.style.transform = 'translateX(70%)';
+        d4.style.transition = '1s ease-in-out';
+        lien_p.style.opacity = 1;
+        lien_s.style.opacity = 1;
+        }
+       
+      })
+
+    </script>
+</body>
+</html>

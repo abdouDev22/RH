@@ -1,0 +1,103 @@
+
+    /********************************************************************************************************************
+    *********************************************************************************************************************
+    ********************************************************* INTERFACE DESCRIPTION *************************************************/*
+    
+
+    .h1 {
+
+   
+        font-size: 3em;
+        width: 900px;
+        letter-spacing: 2px;
+        position: relative;
+        bottom: -80px;
+        color:#fff
+      }
+      
+      .h2 {
+        
+        font-size: 4vw;
+        letter-spacing: .12em;
+        color: transparent;
+        background-color: transparent;
+        -webkit-text-stroke: .4026845638vw white;
+        position: relative;
+        width: 900px;
+        transform: translateY(10px);
+        transform: translate(4em);
+        bottom: -80px;
+      }
+      
+      .descip {
+        font-size: 1.4em;
+        padding: 0px;
+        margin: 0 0 40px;
+        letter-spacing: .102em;
+        position: relative;
+        width: 1000px;
+        transform: translateY(60px);
+        transform: translateX(3em);
+        bottom: -80px;
+        font-family: Noto Sans,Helvetica Neue,Helvetica,Arial,Liberation Sans,Roboto,Noto,sans-serif;
+        line-height: 40px;
+        word-spacing: 2px;
+      }
+      
+      .date {
+        display: wrap;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        bottom: -20px;
+      }
+      
+      .datep {
+        display: flex;
+        flex: 0 50% 0;
+        position: relative;
+        font-size: 1.9vw;
+        width: 20em;
+        transform: translate(30em);
+        margin: 0;
+        height: 0;
+        padding: 0;
+        bottom: -50px;
+      }
+      
+      .datep span {
+        color: transparent;
+        background-color: transparent;
+        -webkit-text-stroke: .13vw white;
+        font-size: 1.9vw;
+        letter-spacing: .1em
+      }
+      
+      .datel {
+        display: flex;
+        flex: 0 50% 0;
+        position: relative;
+        font-size: 1.9vw;
+        width: 20em;
+        transform: translateY(-.9em);
+        transform: translate(10.3em);
+        margin: 0;
+        padding: 0;
+        bottom: -50px;
+        right: 100px;
+      }
+      
+      .datel span {
+        color: transparent;
+        background-color: transparent;
+        -webkit-text-stroke: .13vw white;
+        font-size: 1.9vw;
+        letter-spacing: .1em
+      }
+      h1 {
+        font-size: 3em;
+        width: 900px;
+        letter-spacing: 2px;
+        position: relative;
+        bottom: -80px;
+        color:#d9d9d9;}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RH</title>
+    <script type="module" crossorigin src="login.js"></script>
+    
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <strong><a href="index.html">R.H</strong>
+        <span>Company</a></span>
+      </div>
+
+      <ul>
+        <li><a href="inscription.html">inscription</a></li>
+        <li><a href="offre.php">Offres</a> </li>
+        <li><a href="contact/contact.html">Contacts</a></li>
+      </ul>
+
+    </nav>
+    <div class="circle">
+      <div class="glass">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="form-wrapper sign-in">
+        <form action="php/login.php" method="POST">
+          <h2>Connexion</h2>
+          <div class="input-group">
+            <input type="text" name="name" id="name" required>
+            <label for="name">Nom :</label>
+          </div>
+          <div class="input-group">
+            <input type="password" name="pass" id="pass" required >
+            <label for="pass">Mot de pass :</label>
+          </div>
+          <button type="submit">Connexion</button>
+          <div class="signUp-link"><p style="font-size: 20px;">Toujours pas inscrit ?<a href="inscription.html" style="font-size: 20px;"> inscription</a></p></div>
+          
+        </form>
+      </div>
+    </div>
+
+ 
+ 
+
+  
+
+  
+
+    
+
+  </body>
+</html>

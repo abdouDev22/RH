@@ -1,0 +1,546 @@
+.desdosiier {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    background-color: #000;
+    color: #fff;
+    height: 1000px;
+    width: 1300px;
+
+    .titre {
+        position: absolute;
+        top: 05%;
+        left: 20%;
+        font-size: 2.5em;
+        text-align: center;
+        padding: 5px;
+        border-radius: 7px;
+        height: 40px;
+        width: 500px;
+        border: #919191 solid 3px;
+    }
+
+    .titre1 {
+        position: absolute;
+        top: 05%;
+        left: 10%;
+        font-size: 2.5em;
+        text-align: center;
+        padding: 5px;
+        border-radius: 7px;
+        height: 40px;
+        width: 700px;
+        border: #919191 solid 3px;
+    }
+
+    .retourne {
+        display: block;
+        position: absolute;
+        width: 150px;
+        height: 40px;
+        left: 70%;
+        top: 5.4%;
+        font-size: 17px;
+        text-decoration: none;
+        border: #8f1f13 solid 3px;
+        border-radius: 10px;
+        transition: 1.5s all;
+        z-index: 20;
+
+        b {
+            position: relative;
+            color: #fff;
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            padding: 10px;
+            left: 45px;
+            top: 5px;
+            transition: .3s
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            width: .2em;
+            height: 25px;
+            top: 4px;
+            left: 12px;
+            border-radius: 10px;
+            transform: rotate(60deg);
+            transition: .1s all
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            width: .2em;
+            height: 25px;
+            top: 4px;
+            left: 31.7px;
+            border-radius: 10px;
+            transform: rotate(-60deg);
+            transition: .1s all
+        }
+
+        i {
+            position: absolute;
+            opacity: 0;
+            top: 3px;
+            left: 30px;
+            width: .2em;
+            height: 30px;
+            background-color: #8f1f13;
+            border-radius: 10px;
+            transform: rotate(90deg);
+            transition: 0.5s ease-in-out
+        }
+
+        &:hover {
+            width: 160px;
+            height: 40px;
+            border-radius: 10px;
+            border: #fff solid 3px;
+
+            b {
+                left: 55px;
+                letter-spacing: 2px;
+                color: #8f1f13;
+            }
+
+            i {
+                opacity: 1;
+            }
+
+            &:before {
+                top: 15px;
+                left: 10px;
+                transform: rotate(140deg);
+                height: 20px;
+                border-radius: 10px;
+                transition: 1s;
+                animation: ani 1.2s ease-in-out infinite;
+            }
+
+            &:after {
+                top: 1px;
+                left: 12px;
+                transform: rotate(45.2deg);
+                height: 20px;
+                border-radius: 10px;
+                transition: 1s;
+                animation: ani 1.2s ease-in-out infinite;
+            }
+        }
+    }
+
+    .nom {
+        position: absolute;
+        left: 80%;
+        top: 15%;
+        font-size: 1.7em;
+        border: #fff solid 5px;
+        padding: 15px;
+        border-radius: 08px;
+    }
+
+    .Avantage {
+        position: absolute;
+        font-size: 2em;
+        top: 25%;
+        text-align: center;
+        padding: 3px;
+        border-radius: 7px;
+        height: 40px;
+        width: 300px;
+        border: #919191 solid 2px;
+    }
+
+    .sanction {
+        position: absolute;
+        font-size: 2em;
+        top: 69%;
+        text-align: center;
+        padding: 3px;
+        border-radius: 7px;
+        height: 40px;
+        width: 200px;
+        border: #919191 solid 2px;
+    }
+
+    .demande {
+        position: absolute;
+        font-size: 2em;
+        top: 115%;
+        text-align: center;
+        padding: 3px;
+        border-radius: 7px;
+        height: 40px;
+        width: 300px;
+        border: #919191 solid 2px;
+    }
+
+    .nb {
+        position: absolute;
+        font-size: 1.8em;
+        top: 15%;
+        text-align: center;
+        padding: 3px;
+        border-radius: 7px;
+        height: 30px;
+        width: 100px;
+        border: #919191 solid 3px;
+    }
+}
+
+.grid1 {
+    position: relative;
+    top: 300px;
+    left: 0%;
+}
+
+
+
+.grid2 {
+    position: relative;
+    top: 750px;
+    right: 60px;
+}
+
+.grid3 {
+    position: relative;
+    top: 1200px;
+    right: 370px;
+}
+
+.grid {
+    position: relative;
+    top: 200px;
+    right: 20px;
+}
+
+.item {
+    position: absolute;
+    width: 1320px;
+    height: 100px;
+    line-height: auto;
+    margin: 10px;
+    border: 3px solid #878787;
+    border-radius: 10px;
+    z-index: 1;
+    transition: all .3s ease-out
+}
+
+.item.muuri-item-hidden {
+    z-index: 0
+}
+
+.item.muuri-item-releasing {
+    z-index: 2
+}
+
+.item.muuri-item-dragging {
+    z-index: 3
+}
+
+.item1 {
+    position: absolute;
+    width: 1340px;
+    height: 100px;
+    line-height: auto;
+    margin: 10px;
+    border: 3px solid #878787;
+    border-radius: 10px;
+    z-index: 1;
+    transition: all .3s ease-out
+}
+
+.item1.muuri-item-hidden {
+    z-index: 0
+}
+
+.item1.muuri-item-releasing {
+    z-index: 2
+}
+
+.item1.muuri-item-dragging {
+    z-index: 3
+}
+
+.item1-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    width: 1340px;
+    height: 100px;
+    font-size: 30px;
+    color: #aeacac;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+
+    .no {
+        position: relative;
+        top: 15%;
+        left: 1%;
+        height: 20px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .no1 {
+        position: relative;
+        top: 10%;
+        left: 13.5%;
+        grid-column: 1;
+        grid-row: 1;
+        height: 30px;
+        width: 200px;
+        padding: 3px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 30px;
+        border: 3px solid #878787;
+    }
+
+    .depA {
+        position: relative;
+        top: 15%;
+        right: 37%;
+        height: 20px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .depA1 {
+        position: relative;
+        top: 10%;
+        left: 32%;
+        grid-column: 2;
+        grid-row: 1;
+        height: 30px;
+        width: 200px;
+        padding: 3px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 30px;
+        border: 3px solid #878787;
+    }
+
+    .depS {
+        position: relative;
+        top: 15%;
+        right: 18%;
+        height: 20px;
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .depS1 {
+        position: relative;
+        top: 10%;
+        left: 53%;
+        grid-column: 3;
+        grid-row: 1;
+        height: 30px;
+        width: 200px;
+        padding: 3px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 30px;
+        border: 3px solid #878787;
+    }
+
+    .dateD {
+        position: relative;
+        top: 15%;
+        right: 37%;
+        height: 20px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .dateD1 {
+        position: relative;
+        top: 10%;
+        left: 08%;
+        grid-column: 2;
+        grid-row: 1;
+        height: 30px;
+        width: 200px;
+        padding: 3px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 30px;
+        border: 3px solid #878787;
+    }
+
+    .datef {
+        position: relative;
+        top: 15%;
+        right: 40%;
+        height: 20px;
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .datef1 {
+        position: relative;
+        top: 10%;
+        left: 0%;
+        grid-column: 3;
+        grid-row: 1;
+        height: 30px;
+        width: 200px;
+        padding: 3px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 30px;
+        border: 3px solid #878787;
+    }
+}
+
+.item-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    width: 1320px;
+    height: 100px;
+    font-size: 30px;
+    color: #aeacac;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+
+    .num {
+        position: relative;
+        top: 500%;
+    }
+
+    .no {
+        position: relative;
+        top: 15%;
+        left: 5%;
+        height: 20px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .no1 {
+        position: relative;
+        top: 10%;
+        left: 25%;
+        grid-column: 1;
+        grid-row: 1;
+        height: 30px;
+        width: 200px;
+        padding: 3px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 30px;
+        border: 3px solid #878787;
+    }
+
+    .date {
+        position: relative;
+        top: 15%;
+        right: 20%;
+        height: 20px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .date1 {
+        position: relative;
+        top: 10%;
+        left: 30%;
+        grid-column: 2;
+        grid-row: 1;
+        height: 30px;
+        width: 200px;
+        padding: 3px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 30px;
+        border: 3px solid #878787;
+    }
+
+    .datef {
+        position: relative;
+        top: 15%;
+        right: 15%;
+        height: 20px;
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .datef1 {
+        position: relative;
+        top: 10%;
+        left: 25%;
+        grid-column: 3;
+        grid-row: 1;
+        height: 30px;
+        width: 200px;
+        padding: 3px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 30px;
+        border: 3px solid #878787;
+    }
+
+}
+
+.item1:hover {
+    background: #919191;
+}
+
+.item1-content:hover {
+    color: #000;
+
+    .no1,
+    .depA1,
+    .depS1,
+    .dateD1,
+    .datef1 {
+        border: 3px solid #000;
+    }
+
+
+}
+
+.item1.muuri-item-dragging,
+.item1.muuri-item-releasing {
+    background: #919191;
+    color: #000
+}
+
+.item:hover {
+    background: #919191;
+}
+
+.item-content:hover {
+    color: #000;
+
+    .no1,
+    .date1,
+    .datef1 {
+        border: 3px solid #000;
+    }
+
+
+}
+
+.item.muuri-item-dragging,
+.item.muuri-item-releasing {
+    background: #919191;
+    color: #000
+}

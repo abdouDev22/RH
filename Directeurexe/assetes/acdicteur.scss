@@ -1,0 +1,280 @@
+.grid {
+    position: relative;
+    top: 100px;
+    left: 5%;
+    gap: 500px;
+  }
+  
+  .item {
+    position: absolute;
+    width: 640px;
+    height: 400px;
+    line-height: auto;
+    margin: 10px;
+    border: 3px solid #878787;
+    border-radius: 10px;
+    z-index: 1;
+    transition: all .3s ease-out
+  }
+  
+  .item.muuri-item-hidden {
+    z-index: 0
+  }
+  
+  .item.muuri-item-releasing {
+    z-index: 2
+  }
+  
+  .item.muuri-item-dragging {
+    z-index: 3
+  }
+  
+  .item-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    position: relative;
+    width: 650px;
+    height: 400px;
+    font-size: 30px;
+    color: #aeacac;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+    .no{
+      position: relative;
+      top: 10%;
+      left: 5%;
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .no1{
+      position: relative;
+      top: 5%;
+      left: 30%;
+      grid-column: 1;
+      grid-row: 1;
+      input{
+        width: 200px;
+        height: 13px;
+        font-size: 30px;
+        padding: 10px;
+        color: #aeacac;
+        font-family: 'kanit';
+        background-color: #000;
+        border: 3px solid #000;
+        border-radius: 10px;
+        outline: none;
+      }
+    }
+    
+    .type{
+      position: relative;
+      left: 20px;
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .type1{
+      display: block;
+      height: 30px;
+      width: 170px;
+      padding: 3px;
+      border-radius: 10px;
+      position: relative;
+      font-size: 30px;
+      top: 40px;
+      left: 20px;
+      grid-column: 1;
+      grid-row: 2;
+      border: 3px solid #878787;
+    }
+    .statut{
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .statut1{
+      grid-column: 2;
+      grid-row: 2;
+      display: block;
+      height: 30px;
+      width: 200px;
+      padding: 3px;
+      border-radius: 10px;
+      position: relative;
+      font-size: 30px;
+      top: 40px;
+      border: 3px solid #878787;
+    }
+    .datedeb{
+      grid-column: 1;
+      grid-row: 3;
+      position: relative;
+      top: 10%;
+      left: 20px;
+    }
+    .datedeb1{
+      grid-column: 1;
+      grid-row: 3;
+      position: relative;
+      top: 50%;
+      left: 20px;
+      display: block;
+      height: 30px;
+      width: 200px;
+      padding: 3px;
+      border-radius: 10px;
+      border: 3px solid #878787;
+    }
+    .datelim{
+      grid-column: 2;
+      grid-row: 3;
+      position: relative;
+      top: 10%;
+    }
+    .datelim1{
+      grid-column: 2;
+      grid-row: 3;
+      position: relative;
+      top: 50%;
+      display: block;
+      height: 30px;
+      width: 200px;
+      padding: 3px;
+      border-radius: 10px;
+      border: 3px solid #878787;
+    }
+    .modifier{
+        position: relative;
+        top: 6px;
+        left: 20px;
+        grid-row: 4;
+        grid-column: 1;
+        svg{
+          height: 100px;
+          width: 100px;
+          transition: 600ms;
+          
+          path{
+            fill: #4a0ee2;
+          }
+          &:hover{
+              transform: rotate(360deg) 
+          }
+        }
+        
+     }
+  }
+  
+  .item:hover {
+    background: #919191;
+  }
+  
+  .item-content:hover {
+    color: #000;
+   .datelim1 , .datedeb1,.statut1,.type1{
+    border: 3px solid #000;
+   }
+  }
+  
+  .item.muuri-item-dragging,
+  .item.muuri-item-releasing {
+    background: #919191;
+    color: #000
+  }
+  
+  
+  
+  .item.active .item-description {
+    display: block;
+    opacity: 1
+  }
+  .voire {
+    position: absolute;
+    background: #000;
+    bottom: 0;
+    right: 50px;
+    margin: 15px;
+    color: #aeacac;
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    font-weight: 200;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s
+  }
+  
+  .voire:hover {
+    background: var(--clr);
+    color: #aeacac;
+    letter-spacing: .2em;
+    border-radius: 10px
+  }
+  
+  .voire:before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #000;
+    border-radius: 10px
+  }
+  
+  .voire span {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px
+  }
+  
+  .voire i {
+    position: absolute;
+    inset: 0;
+    display: block;
+    border-radius: 10px
+  }
+  
+  .voire i:before {
+    content: "";
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    transform: translate(-50%);
+    width: 10px;
+    height: 6px;
+    background: #000;
+    border: 2px solid var(--clr);
+    border-radius: 10px;
+    transition: .5s, box-shadow .5s;
+    transition-delay: .5s 0s
+  }
+  
+  .voire:hover i:before {
+    width: 6px;
+    left: calc(50% - 3px);
+    border-radius: 10px;
+    box-shadow: 70px 0 #fff, -70px 0 var(--clr), -70px 0 0 4px #000, 10px -10px var(--clr), -10px -10px #fff;
+    transition-delay: 0s, .5s
+  }
+  
+  .voire i:after {
+    content: "";
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    transform: translate(-50%);
+    width: 10px;
+    height: 6px;
+    background: #000;
+    border: 2px solid var(--clr);
+    border-radius: 10px;
+    transition: .5s, box-shadow .5s;
+    transition-delay: .5s 0s
+  }
+  
+  .voire:hover i:after {
+    width: 6px;
+    left: calc(50% - 3px);
+    border-radius: 10px;
+    box-shadow: -70px 0 #fff, 70px 0 var(--clr), 70px 0 0 4px #000, -10px 10px var(--clr), 10px 10px #fff;
+    transition-delay: 0s, .5s
+  }  

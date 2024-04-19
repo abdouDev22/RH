@@ -1,0 +1,445 @@
+.form {
+  display: grid;
+  font-size: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  position: relative;
+  top: 16%;
+  left: 5%;
+  height: 35vw;
+  width: 94vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+.form .item1 {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  grid-column: 1;
+  grid-row: 1;
+}
+.form .item1S {
+  position: relative;
+  top: 50%;
+  left: 10%;
+  grid-column: 1;
+  grid-row: 1;
+}
+.form .item1S input {
+  width: 210px;
+  height: 32px;
+  font-size: 1em;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+.form .item1S input:valid {
+  border: 3px solid #14b16d;
+}
+.form .item2 {
+  position: relative;
+  top: 30%;
+  grid-column: 2;
+  grid-row: 1;
+}
+.form .item2S {
+  position: relative;
+  top: 55%;
+  grid-column: 2;
+  grid-row: 1;
+}
+.form .item2S input {
+  width: 210px;
+  height: 32px;
+  font-size: 1em;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+.form .item2S input:valid {
+  border: 3px solid #14b16d;
+}
+.form .item3 {
+  position: relative;
+  top: 30%;
+  grid-column: 3;
+  grid-row: 1;
+}
+.form .itme3S {
+  position: relative;
+  top: 55%;
+  grid-column: 3;
+  grid-row: 1;
+}
+.form .itme3S input {
+  width: 210px;
+  height: 32px;
+  font-size: 1em;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+.form .itme3S input:valid {
+  border: 3px solid #14b16d;
+}
+.form .item4 {
+  position: relative;
+  left: 50%;
+  grid-column: 1;
+  grid-row: 2;
+}
+.form .item4S {
+  position: relative;
+  top: 35%;
+  left: 50%;
+  grid-column: 1;
+  grid-row: 2;
+}
+.form .item4S input {
+  width: 270px;
+  height: 32px;
+  font-size: 1em;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+.form .item4S input::-webkit-calendar {
+  color: rgb(195, 0, 255);
+}
+.form .item4S input:valid {
+  border: 3px solid #14b16d;
+}
+.form .item5 {
+  position: relative;
+  left: 60%;
+  grid-column: 2;
+  grid-row: 2;
+}
+.form .item5S {
+  position: relative;
+  top: 35%;
+  left: 60%;
+  grid-column: 2;
+  grid-row: 2;
+}
+.form .item5S input {
+  width: 550px;
+  height: 32px;
+  font-size: 1em;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  outline: none;
+  transition: 500ms ease-in-out;
+}
+.form .item5S input:valid {
+  border: 3px solid #14b16d;
+}
+.form .item6 {
+  position: relative;
+  left: 10%;
+  grid-column: 1;
+  grid-row: 3;
+}
+.form .item6S {
+  position: relative;
+  top: 40%;
+  left: 10%;
+  grid-column: 1;
+  grid-row: 3;
+}
+.form .item6S input {
+  width: 270px;
+  height: 32px;
+  font-size: 1em;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  outline: none;
+  transition: 500ms ease-in-out;
+}
+.form .item6S input:valid {
+  border: 3px solid #14b16d;
+}
+.form .item7 {
+  position: relative;
+  top: -5%;
+  grid-column: 3;
+  grid-row: 3;
+}
+.form .item7S {
+  position: relative;
+  top: 30%;
+  grid-column: 3;
+  grid-row: 3;
+}
+.form .item7S input {
+  width: 210px;
+  height: 32px;
+  font-size: 1em;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+.form .item7S input:valid {
+  border: 3px solid #14b16d;
+}
+.form .item8 {
+  position: relative;
+  left: 10%;
+  top: -3%;
+  grid-column: 2;
+  grid-row: 3;
+}
+.form .item8S {
+  position: relative;
+  left: 10%;
+  top: 40%;
+  grid-column: 2;
+  grid-row: 3;
+}
+.form .item9 {
+  position: relative;
+  top: -5%;
+  grid-column: 2;
+  grid-row: 2;
+}
+.form .item9S {
+  position: relative;
+  top: 35%;
+  grid-column: 2;
+  grid-row: 2;
+}
+.form .item9S input {
+  width: 240px;
+  height: 32px;
+  font-size: 1em;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+.form .item9S input:valid {
+  border: 3px solid #14b16d;
+}
+.form .item2S1 {
+  position: relative;
+  top: 55%;
+  grid-column: 2;
+  grid-row: 1;
+}
+.form .item2S1 input {
+  width: 250px;
+  height: 32px;
+  font-size: 1em;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+.form .item2S1 input:valid {
+  border: 3px solid #14b16d;
+}
+.form .lien-Modifier {
+  position: relative;
+  top: 30%;
+  left: 20%;
+  grid-column: 1;
+  grid-row: 4;
+}
+.form .lien-Modifier input {
+  font-family: "kanit";
+  font-size: 1em;
+  text-decoration: none;
+  width: 160px;
+  padding: 9px;
+  color: rgb(15, 15, 15);
+  background-color: transparent;
+  border: 5px solid #14b16d;
+  letter-spacing: 0.01em;
+  border-radius: 10px;
+  transition: 500ms;
+}
+.form .lien-Modifier input:hover {
+  width: 200px;
+  text-decoration: underline;
+  background-color: #14b16d;
+  letter-spacing: 0.1em;
+}
+.form .lien-conn {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  grid-column: 3;
+  grid-row: 4;
+}
+.form .lien-conn a {
+  display: block;
+  text-decoration: none;
+  width: 240px;
+  padding: 10px;
+  color: rgb(15, 15, 15);
+  border: 5px solid #14b16d;
+  letter-spacing: 0.01em;
+  border-radius: 10px;
+  transition: 500ms;
+}
+.form .lien-conn a:hover {
+  text-decoration: underline;
+  width: 280px;
+  background-color: #14b16d;
+  letter-spacing: 0.1em;
+}
+.form .lien-conn2 {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  grid-column: 2;
+  grid-row: 3;
+}
+.form .lien-conn2 input {
+  font-family: "kanit";
+  font-size: 1em;
+  text-decoration: none;
+  width: 160px;
+  padding: 9px;
+  color: rgb(15, 15, 15);
+  background-color: transparent;
+  border: 5px solid #14b16d;
+  letter-spacing: 0.01em;
+  border-radius: 10px;
+  transition: 500ms;
+}
+.form .lien-conn2 input:hover {
+  width: 200px;
+  text-decoration: underline;
+  background-color: #14b16d;
+  letter-spacing: 0.1em;
+}
+
+.retourne {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  left: 1em;
+  top: 40px;
+  font-size: 17px;
+  text-decoration: none;
+  border: #8f1f13 solid 3px;
+  border-radius: 10px;
+  transition: 1.5s all;
+}
+.retourne b {
+  position: relative;
+  color: #080808;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  padding: 10px;
+  left: 45px;
+  top: 5px;
+  transition: 0.3s;
+}
+.retourne:before {
+  content: "";
+  position: absolute;
+  background-color: #0d0d0d;
+  width: 0.2em;
+  height: 25px;
+  top: 4px;
+  left: 12px;
+  border-radius: 10px;
+  transform: rotate(60deg);
+  transition: 0.1s all;
+}
+.retourne::after {
+  content: "";
+  position: absolute;
+  background-color: #0e0d0d;
+  width: 0.2em;
+  height: 25px;
+  top: 4px;
+  left: 31.7px;
+  border-radius: 10px;
+  transform: rotate(-60deg);
+  transition: 0.1s all;
+}
+.retourne i {
+  position: absolute;
+  opacity: 0;
+  top: 3px;
+  left: 30px;
+  width: 0.2em;
+  height: 30px;
+  background-color: #8f1f13;
+  border-radius: 10px;
+  transform: rotate(90deg);
+  transition: 0.5s ease-in-out;
+}
+.retourne:hover {
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  border: #0d0d0d solid 3px;
+}
+.retourne:hover b {
+  left: 55px;
+  letter-spacing: 2px;
+  color: #8f1f13;
+}
+.retourne:hover i {
+  opacity: 1;
+}
+.retourne:hover:before {
+  top: 15px;
+  left: 10px;
+  transform: rotate(140deg);
+  height: 20px;
+  border-radius: 10px;
+  transition: 1s;
+  animation: ani 1.2s ease-in-out infinite;
+}
+.retourne:hover:after {
+  top: 1px;
+  left: 12px;
+  transform: rotate(45.2deg);
+  height: 20px;
+  border-radius: 10px;
+  transition: 1s;
+  animation: ani 1.2s ease-in-out infinite;
+}
+
+@keyframes ani {
+  0% {
+    background-color: #8f1f13;
+    left: 15px;
+  }
+  100% {
+    background-color: #080707;
+    left: 10px;
+  }
+}/*# sourceMappingURL=profile.css.map */
+nav ul li a {
+  margin: 10px;
+  padding: 1vw;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #1b1b1b;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  border: #ab050b solid 3px;
+  background-color: #ab050b;
+  transition: 0.6s ease-in-out;
+}
+nav ul li a:hover {
+  color: #fff;
+  box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+  background-color: rgba(11, 11, 11, 0.0980392157);
+}

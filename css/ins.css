@@ -1,0 +1,356 @@
+h1 {
+  font-size: 4em;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cont {
+  height: 350px;
+  width: 900px;
+  padding: 10px;
+  border: #9c9a9a 4px solid;
+  border-radius: 20px;
+  background: rgba(156, 154, 154, 0.2);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+.cont .nav {
+  position: absolute;
+  top: 70%;
+  background-color: transparent;
+  height: 100px;
+  width: 850px;
+}
+.cont .nav .suivant {
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  border: #9c9a9a solid 3px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cont .nav .suivant svg {
+  position: absolute;
+  top: -17%;
+  height: 60px;
+  width: 60px;
+  transform: translateX(0px);
+}
+.cont .nav .suivant svg path {
+  fill: rgb(32, 67, 68);
+}
+.cont .nav .suivant:hover {
+  transform: scale(1.2);
+}
+.cont .nav .suivant:hover svg {
+  animation: ani 1.3s forwards;
+}
+.cont .nav .presendant {
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  border: #9c9a9a solid 3px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 0;
+}
+.cont .nav .presendant svg {
+  position: absolute;
+  top: -17%;
+  height: 60px;
+  width: 60px;
+  transform: translateX(0px) matrix(-1, 0, 0, 1, 0, 0);
+}
+.cont .nav .presendant svg path {
+  fill: rgb(32, 67, 68);
+}
+.cont .nav .presendant:hover {
+  transform: scale(1.2);
+}
+.cont .nav .presendant:hover svg {
+  animation: anip 1.3s forwards;
+}
+.cont .cont1 {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+}
+.cont .cont1 .label1 {
+  font-size: 2em;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+}
+.cont .cont1 .input1 {
+  font-size: 2em;
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont1 .label2 {
+  font-size: 2em;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.cont .cont1 .input2 {
+  font-size: 2em;
+  position: absolute;
+  top: 43%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont2 {
+  position: absolute;
+  opacity: 0;
+  height: 300px;
+  width: 100%;
+  transform: translateX(70%);
+}
+.cont .cont2 .label1 {
+  font-size: 2em;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+}
+.cont .cont2 .input1 {
+  font-size: 2em;
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont2 .label2 {
+  font-size: 2em;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.cont .cont2 .input2 {
+  font-size: 2em;
+  position: absolute;
+  top: 43%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont3 {
+  position: absolute;
+  opacity: 0;
+  height: 300px;
+  width: 100%;
+  transform: translateX(70%);
+}
+.cont .cont3 .label1 {
+  font-size: 2em;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+}
+.cont .cont3 .input1 {
+  font-size: 2em;
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont3 .label2 {
+  font-size: 2em;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.cont .cont3 .input2 {
+  font-size: 2em;
+  position: absolute;
+  top: 43%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont4 {
+  position: absolute;
+  opacity: 0;
+  height: 300px;
+  width: 100%;
+  transform: translateX(70%);
+}
+.cont .cont4 .label1 {
+  font-size: 2em;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+}
+.cont .cont4 .input1 {
+  font-size: 2em;
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont4 .label2 {
+  font-size: 2em;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.cont .cont4 .input2 {
+  font-size: 2em;
+  position: absolute;
+  top: 43%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont4 .valider {
+  padding: 10px;
+}
+.cont .cont5 {
+  position: absolute;
+  opacity: 0;
+  height: 300px;
+  width: 100%;
+  transform: translateX(70%);
+}
+.cont .cont5 .label1 {
+  font-size: 2em;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+}
+.cont .cont5 .input1 {
+  font-size: 2em;
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont5 .label2 {
+  font-size: 2em;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.cont .cont5 .input2 {
+  font-size: 2em;
+  position: absolute;
+  top: 43%;
+  left: 10%;
+  outline: none;
+  border: #131212 solid 3px;
+  border-radius: 10px;
+}
+.cont .cont5 .valider {
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  border: #9c9a9a solid 3px;
+  border-radius: 10px;
+}
+.cont .cont5 .valider:hover {
+  background-color: #fff;
+  color: #131212;
+  transition: 400ms ease-in-out;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(-162px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(80px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes anip {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(-50px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(160px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(0px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(80px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+}
+@keyframes suivant {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(-50px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(160px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(0px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(80px) matrix(-1, 0, 0, 1, 0, 0);
+  }
+}/*# sourceMappingURL=ins.css.map */

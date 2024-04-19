@@ -1,0 +1,66 @@
+.cont-deco {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10vw;
+}
+.cont-deco p {
+  font-size: 3vw;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0.5vw solid #01a3a4;
+}
+.cont-deco i {
+  display: block;
+  position: relative;
+  top: 0.1vw;
+  margin-left: 2vw;
+  height: 4.4vw;
+  width: 10vw;
+  border-radius: 10px;
+  border: 0.5vw solid #131313;
+  z-index: 12;
+}
+.cont-deco i::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 10px;
+  top: 84%;
+  background-color: #01a3a4;
+  transform-origin: bottom;
+  transform: scaleY(4);
+  z-index: 0;
+}
+.cont-deco i::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 10px;
+  top: 84%;
+  left: 50%;
+  background-color: #4d01a4;
+  transform-origin: bottom;
+  transform: scaleY(4);
+  border-radius: 0px 200px 10px 10px;
+  -moz-border-radius: 0px 200px 10px 10px;
+  -webkit-border-radius: 0px 200px 10px 10px;
+  border: 0px solid #000000;
+  z-index: 0;
+}
+.cont-deco i::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 10px;
+  top: 84%;
+  left: 100%;
+  background-color: #01a43f;
+  transform-origin: bottom;
+  transform: scaleY(4);
+  border-radius: 0px 200px 10px 10px;
+  -moz-border-radius: 0px 200px 10px 10px;
+  -webkit-border-radius: 0px 200px 10px 10px;
+  border: 0px solid #000000;
+  z-index: 0;
+}/*# sourceMappingURL=Index.css.map */

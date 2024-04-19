@@ -1,0 +1,279 @@
+@font-face {
+  font-family: kanit;
+  src: url(../fonts/kanit-bold.woff2) format("woff2"), url(../fonts/kanit-bold.woff) format("woff")
+}
+
+* {
+  box-sizing: border-box
+}
+html,
+body {
+  padding: 0;
+  margin: 0
+}
+
+body {
+  background: black;
+  color: #fff;
+  font-family: kanit, sans-serif
+}
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Helvetica;
+  padding: 0 1rem;
+  position: relative;
+  flex-shrink: 0
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  transform: translateX(180%)
+}
+
+nav ul:first-child {
+  gap: 6rem
+}
+
+nav ul:last-child {
+  gap: 5rem
+}
+
+nav .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-800%)
+}
+
+.grid {
+  position: relative
+}
+
+.item {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  line-height: auto;
+  margin: 10px;
+  border: 3px solid #878787;
+  border-radius: 10px;
+  z-index: 1;
+  transition: all .3s ease-out
+}
+
+.item.muuri-item-hidden {
+  z-index: 0
+}
+
+.item.muuri-item-releasing {
+  z-index: 2
+}
+
+.item.muuri-item-dragging {
+  z-index: 3
+}
+
+.item-content {
+  position: relative;
+  width: 630px;
+  height: 300px;
+  font-size: 30px;
+  color: #aeacac;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: color .3s ease-in-out;
+  cursor: pointer
+}
+
+.item:hover {
+  background: #919191
+}
+
+.item-content:hover {
+  color: #000
+}
+
+.item.muuri-item-dragging,
+.item.muuri-item-releasing {
+  background: #919191;
+  color: #000
+}
+
+
+
+.item.active .item-description {
+  display: block;
+  opacity: 1
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  padding: 10px 30px;
+  background: #979494;
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 700;
+  overflow: hidden;
+  margin: 5px;
+  box-sizing: border-box;
+  border-radius: 5px
+}
+
+.btn.active:before {
+  width: 1000px;
+  height: 1000px;
+  z-index: 1
+}
+
+.btn span {
+  position: relative;
+  z-index: 1
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: rgba(2, 2, 198, .6);
+  transition: width .6s, height .6s
+}
+
+.btn:hover:before {
+  width: 500px;
+  height: 500px;
+  z-index: 1
+}
+
+.voire {
+  position: absolute;
+  background: #000;
+  bottom: 0;
+  right: 50px;
+  margin: 15px;
+  color: #aeacac;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  font-weight: 200;
+  padding: 10px;
+  border-radius: 10px;
+  transition: .5s
+}
+
+.voire:hover {
+  background: var(--clr);
+  color: #aeacac;
+  letter-spacing: .2em;
+  border-radius: 10px
+}
+
+.voire:before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #000;
+  border-radius: 10px
+}
+
+.voire span {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px
+}
+
+.voire i {
+  position: absolute;
+  inset: 0;
+  display: block;
+  border-radius: 10px
+}
+
+.voire i:before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  transform: translate(-50%);
+  width: 10px;
+  height: 6px;
+  background: #000;
+  border: 2px solid var(--clr);
+  border-radius: 10px;
+  transition: .5s, box-shadow .5s;
+  transition-delay: .5s 0s
+}
+
+.voire:hover i:before {
+  width: 6px;
+  left: calc(50% - 3px);
+  border-radius: 10px;
+  box-shadow: 70px 0 #fff, -70px 0 var(--clr), -70px 0 0 4px #000, 10px -10px var(--clr), -10px -10px #fff;
+  transition-delay: 0s, .5s
+}
+
+.voire i:after {
+  content: "";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  transform: translate(-50%);
+  width: 10px;
+  height: 6px;
+  background: #000;
+  border: 2px solid var(--clr);
+  border-radius: 10px;
+  transition: .5s, box-shadow .5s;
+  transition-delay: .5s 0s
+}
+
+.voire:hover i:after {
+  width: 6px;
+  left: calc(50% - 3px);
+  border-radius: 10px;
+  box-shadow: -70px 0 #fff, 70px 0 var(--clr), 70px 0 0 4px #000, -10px 10px var(--clr), 10px 10px #fff;
+  transition-delay: 0s, .5s
+}
+
+.a {
+  color: #fff;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  position: relative
+}
+
+.a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width .2s ease-in-out
+}
+
+.a:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto
+}

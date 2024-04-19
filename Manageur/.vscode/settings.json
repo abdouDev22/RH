@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnPaste": false, // requis
+  "editor.formatOnType": false, // requis
+  "editor.formatOnSave": true, // facultatif
+  "editor.formatOnSaveMode": "file", // requis pour le formatage à l'enregistrement
+  "files.autoSave": "onFocusChange", // facultatif mais recommandé
+  "vs-code-prettier-eslint.prettierLast": false,
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "liveServer.settings.port": 5501 // définissez-le sur "true" pour exécuter prettier en dernier
+}
